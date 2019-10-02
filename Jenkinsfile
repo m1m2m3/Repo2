@@ -5,7 +5,7 @@ pipeline {
         stage('SCM Checkout') 
 	    {
             steps {
-		  git "https://github.com/m1m2m3/maven-project.git"
+		  git "https://github.com/m1m2m3/Repo2.git"
 	          }
             }
         
