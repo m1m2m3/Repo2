@@ -13,7 +13,7 @@ pipeline {
            stage('build && SonarQube analysis') 
 	    {
             steps {
-                withSonarQubeEnv(credentialsId: 'abc', installationName: 'Sonar') 
+                withSonarQubeEnv(credentialsId: 'sonarabc', installationName: 'Sonar') 
 		    {
                  withMaven(jdk: 'myjdk', maven: 'mymaven') 
 			    {
