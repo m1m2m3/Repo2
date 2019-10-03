@@ -28,7 +28,7 @@ pipeline {
 	   steps{
            sshagent(['52.55.151.47']) 
 		   {
-                   sh 'scp -o StrictHostKeyChecking=no */target/*.war ec2-user@52.55.151.47:/var/lib/tomcat/webapps'
+                   sh 'scp -o StrictHostKeyChecking=no */target/*.jar ec2-user@52.55.151.47:/var/lib/tomcat/webapps'
                     }
                 }
            }
